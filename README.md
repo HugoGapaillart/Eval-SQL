@@ -12,13 +12,13 @@
 
 ## Installation de la base
 
-### Création
+### Création des tables
 Exécutez la commande suivante :
 ```p
 --mysql -h localhost -u root -p kiceo < schema.sql
 ```
 
-### Ajout des données
+### Ajout des données dans les tables
 Exécutez la commande suivante :
 ```p
 --mysql -h localhost -u root -p kiceo < data.sql
