@@ -1,4 +1,4 @@
-/* mysql -h localhost -u root -p kiceo < requetes.sql */
+/* mysql -u root -p kiceo < requetes.sql */
 
 /* Question 1 */
 
