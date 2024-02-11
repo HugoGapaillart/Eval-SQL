@@ -1,4 +1,4 @@
-/* mysql -h localhost -u root -p kiceo < data.sql */
+/* mysql -u root -p kiceo < data.sql */
 
 DELETE FROM Dessert;
 DELETE FROM Station
