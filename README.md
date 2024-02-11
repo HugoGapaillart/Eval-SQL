@@ -30,10 +30,6 @@ Exécutez la commande suivante :
 --mysql -u root -p kiceo < requetes.sql
 ```
 
-<div style="border: 2px dashed #998529; padding: 10px; background-color: #f2d13d33;">
-  <code>root</code> <b>est un utilisateur par défaut, il se peut qu'il n'existe pas dans votre système, veuillez vous référez à la liste d'utilisateurs de votre base de données. </b>
-</div>
-
 ## Conception
 
 ### Dictionnaire de données
@@ -47,7 +43,9 @@ Exécutez la commande suivante :
 | jour | ```ENUM('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi')``` |
 | id_station | ```INT AUTO_INCREMENT``` |
 | id_station_secondaire | ```INT NOT NULL``` |
-| nom_station | ```VARCHAR(50)``` |
+| nom_station | ```VARCHAR(50) NOT NULL``` |
+| station_depart | ```INT NOT NULL``` |
+| station_fin | ```INT NOT NULL``` |
 
 ### Modèle relationnel de données
 
