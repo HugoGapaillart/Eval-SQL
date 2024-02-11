@@ -15,19 +15,19 @@
 ### Création des tables
 Exécutez la commande suivante :
 ```p
---mysql -h localhost -u root -p kiceo < schema.sql
+--mysql -u root -p kiceo < schema.sql
 ```
 
 ### Ajout des données dans les tables
 Exécutez la commande suivante :
 ```p
---mysql -h localhost -u root -p kiceo < data.sql
+--mysql -u root -p kiceo < data.sql
 ```
 
 ### Requêtage
 Exécutez la commande suivante :
 ```p
---mysql -h localhost -u root -p kiceo < requetes.sql
+--mysql -u root -p kiceo < requetes.sql
 ```
 
 <div style="border: 2px dashed #998529; padding: 10px; background-color: #f2d13d33;">
@@ -41,11 +41,12 @@ Exécutez la commande suivante :
 | Donnée | Type |
 |-----------|-----------|
 | id_ligne  | ```INT AUTO_INCREMENT``` |
-| numero_ligne | ```INT``` |
-| nom_ligne | ```VARCHAR(50)```  |
+| num_ligne | ```INT NOT NULL``` |
+| nom_ligne | ```VARCHAR(50) NOT NULL```  |
 | horaire | ```TIME``` |
 | jour | ```ENUM('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi')``` |
 | id_station | ```INT AUTO_INCREMENT``` |
+| id_station_secondaire | ```INT NOT NULL``` |
 | nom_station | ```VARCHAR(50)``` |
 
 ### Modèle relationnel de données
