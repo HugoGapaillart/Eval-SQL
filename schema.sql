@@ -1,4 +1,4 @@
-/* mysql -h localhost -u root -p kiceo < schema.sql */
+/* mysql -u root -p kiceo < schema.sql */
 
 DROP TABLE IF EXISTS Dessert;
 DROP TABLE IF EXISTS Station;
